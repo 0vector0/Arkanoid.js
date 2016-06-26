@@ -64,15 +64,14 @@ function newLevel() {
 }
 
 function brick(color, x, y, width, height, radius, visible) {
-    this.color = color; // цвет прямоугольника
-    this.x = x; // координата х
-    this.y = y; // координата у
-    this.width = width; // ширина
-    this.height = height; // высота
-    this.radius = radius; //радиус скруглений
-    this.visible = visible; //видимость
-    this.draw = function () // Метод рисующий прямоугольник
-    {
+    this.color = color;
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
+    this.radius = radius;
+    this.visible = visible;
+    this.draw = function () {
         context.fillStyle = "grey";
         fillRoundedRect(this.x, this.y, this.width, this.height, this.radius);
         context.fillStyle = this.color;
